@@ -18,5 +18,5 @@ KotBot is a boilerplate for programming your FRC robots in kotlin.  It includes 
 #### Language features:
 + __Lean syntax__: Kotlin's syntax is inherently slim and very readable.
 + __Null saftey__: Kotlin includes clean syntax for eliminating dangerous null references from your code.
-+ __Functional support__:
++ __Functional support__: Full support for lamdas with no runtime overhead.
 ### How?

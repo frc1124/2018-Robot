@@ -6,7 +6,7 @@ KotBot is a boilerplate for programming your FRC robots in kotlin.  It includes 
 
 + __Write__: You can use KotBot with any ide or text editor
 
-+ __Test__: KotBot comes bundled with Spec, a kotlin unit testing libray (WIP)
++ __Test__: KotBot comes bundled with Spek, a kotlin unit testing libray (WIP)
 
 + __Deploy__: With KotBot, you can deploy to your RoboRio from the terminal or command line with a single command (via GradleRio)
 ### Why?

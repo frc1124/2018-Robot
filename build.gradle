@@ -57,9 +57,9 @@ junitPlatform {
 }
 
 frc {
-  team = "9999"
-  robotClass = "org.team9999.gamename.Robot.kt"
-  rioIP = "10.99.99.89"
+  team = "1124"
+  robotClass = "org.team1124.gamename.Robot.kt"
+  rioIP = "10.11.24.89"
 }
 
 def robotManifest = {

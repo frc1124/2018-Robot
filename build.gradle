@@ -1,15 +1,11 @@
 plugins {
   id "org.jetbrains.kotlin.jvm" version "1.2.10"
-  id "jaci.openrio.gradle.GradleRIO" version "2018.01.06"
+  id "jaci.openrio.gradle.GradleRIO" version "2018.01.06b"
 }
-
-// Set team number and robot name here
-def TEAM = 1124
-def NAME = "robot"
 
 deploy {
   targets {
-    target("roborio", jaci.openrio.gradle.frc.RoboRIO) { team = TEAM }
+    target("roborio", jaci.openrio.gradle.frc.RoboRIO) { team = 1124 }
   }
 
   artifacts {
@@ -33,11 +29,11 @@ dependencies {
 
 jar {
   from configurations.compile.collect { it.isDirectory() ? it : zipTree(it) }
-  manifest jaci.openrio.gradle.GradleRIOPlugin.javaManifest("org.team${TEAM}.${NAME}.Robot")
+  manifest jaci.openrio.gradle.GradleRIOPlugin.javaManifest("org.team1124.robot.Robot")
 }
 
 task wrapper(type: Wrapper) {
-  gradleVersion = '4.2.1'
+  gradleVersion = '4.4'
 }
 
 telemetry {

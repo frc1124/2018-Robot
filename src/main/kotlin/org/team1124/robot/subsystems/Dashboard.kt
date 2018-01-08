@@ -2,14 +2,15 @@ package org.team1124.robot.subsystems
 
 import edu.wpi.first.wpilibj.command.Subsystem
 import edu.wpi.first.wpilibj.PWMTalonSRX
-import edu.wpi.first.networktables.NetworkTable
+import edu.wpi.first.networktables.NetworkTableInstance
 import org.team1124.robot.Map
 
 class Dashboard : Subsystem () {
 
-  //private val visionTable = NetworkTable.getTable("vision")
-  //private val sensorTable = NetworkTable.getTable("sensor")
-  //private val errorsTable = NetworkTable.getTable("errors")
+  private val globalTable = NetworkTableInstance.create()
+  private val visionTable = globalTable.getTable("vision")
+  private val sensorTable = globalTable.getTable("sensor")
+  private val errorsTable = globalTable.getTable("errors")
 
   override fun initDefaultCommand () = setDefaultCommand(null)
 }
